@@ -1,0 +1,352 @@
+Lecture 1: JFrame
+                setVisible()
+                setDefaultCloseOperation()
+                setSize()
+                setLocation()
+                setBounds()
+                setIconImage()
+                setTitle()
+                setBackground()
+                setResizable()
+
+Lecture 2:  JLabel
+                    setText()
+                    setFont()
+                    How to use Image in JLabel
+                    Hot to use both Image and Text in JLabel
+
+Lecture 3:  JtextField
+                    setText()
+                    setFont()
+                    setBackground()
+                    setForeground()
+                    setEditable()
+
+Lecture 4:  JPasswordField
+                    setEchoChar()
+                    How to hide/show Password
+
+Lecture 5:  JButton
+                   How to create
+                   setFont()
+                   setText()
+                   setForeground()
+                   setBackground()
+                   setCursor()
+                   setEnabled()
+                   setVisible()
+                   How to use Image in Button
+
+Lecture 6_1:  JButton Event
+                   ActionListener
+                   void actionPerformed()
+                   ddActionListener()
+
+Lecture 6_2:  JButton Event
+                   Multiple Buttons Event
+                   handling
+                   getSource()
+
+Lecture 6_3: Event Handling Using anonymous inner class
+Lecture 6_4: Event handling using other Class
+
+                Steps to follow WhileEvent handling:
+
+                step1: implement ActionListener interface
+                    class Myframe implements ActionListener{
+
+                                    public void actionPerformed(ActionEvent e){}
+
+                                    }
+                                    class Main{
+                                    psvm(String {} args){
+                                    Myframe f = new Myframe();
+                                    }
+                                    }
+
+                Step2: override method public void actonPerformed(ActionEvent e){}
+
+                    class Main{
+                        psmv(String [] args){
+                            button.addActionListener(new Red()){
+                            }
+                        }
+                        static class Red implements ActionListener{
+                            public void actionPerformed(ActionEvent e){}
+                        }
+                    }
+                Step3: bind the ActionListener to component by using addActionListener() method
+                    class Main{
+                    psvm(String [] args){
+                            button.addActionListener(new ActionListener()){
+                            public void actionPerformedActionEvent e){
+                                }
+                            }
+                        }
+                    }
+
+Lecture 7:  JTextArea
+                how to create JTextArea
+                setText(String)
+                setFont(Font)
+                setEditable(boolean)
+                setLineWrap(boolean)
+Lecture 8:  JRadioButton
+                setFont()
+                setEnabled()
+                ButtonGroup()
+                how to create already selected radio button
+                setSelected(boolean)
+Lecture 9:  JCheckBox
+                setFont()
+                setEnabled()
+                setSelected()
+Lecture 10: JComboBox
+                setEditable()
+                setSelectedIndex(index)
+                setSelectedItem(String)
+                setFont()
+                getSelectedIndex()
+                getSelectedItem()
+                addItem()
+Lecture 11: JAR Files
+                Why jar files?
+                How to create jar files?
+                    1. Jar files are the executable files that can be run by double clicking on it.
+                    2. A developer should not provide source code to its client/other so when he create a software
+                        he profile an executable file to its client so that they can run it easily.
+Lecture 12:     JMenuBar
+                    parts of a menubar
+                        1.MenuBar
+                        2.menus
+                        3.menuItems
+                    How to create a menubar in JFrame
+Lecture 13:     Event Listeners
+                    >Listeners : Anything that listens something is called a Listener.
+                    >Events: An Event is the Change in the state of a component.
+                    >Event Listeners: An Event Listener is a Listener that listens an Event.
+                    >Event Handling: To handle the events is called Handling. To handle an event we need an Event Listener
+                                     and Handling those events is called Event.
+                    Different types of Event Listeners:
+                    ActionListener          (ActionEvent)
+                    ItemListener            (ItemEvent)
+                    KeyListener             (KeyEvent)
+                    MouseListener           (MouseEvent)
+                    MouseMotionListener     (MouseMotionEvent)
+                    WindowListener          (WindowEvent)
+                    FocusListener           (FocusEvent)
+                    CaretListener           (CaretEvent)
+
+Lecture 14:     Listeners
+                        A Listener is an interface in Java, that listens some event generated by component.
+                ActionEvent fires on
+                        When user
+                            >click on a button
+                            >press Enter in a TextField
+                            >choose a menuItem.
+                How to write an ActionListener
+                    >ActionListener interface
+                    >void actionPerformed()
+                    >addActonListener()
+
+                    class Example implements ActionListener{
+                        public Example(){   component.addActionListener(this);}
+                        public void actionPerformed(ActionEvent e){}
+                    }
+Lecture 15:     ItemListener: ItemListener is a Listener that listens ItemEvent.
+                    ItemEvent fires on:
+                        >Any item is selected in a combobox
+                        > checkbox is clicked
+                        > radiobutton is clicked
+                        > choose a JCheckBoxMenuItem
+                    ItemListener
+                     How to write Item Listener
+                        >ItemListener
+                        >void itemStateChanged()
+                        >addItemListener()
+
+Lecture 16:     keyListener
+                    How to write KeyListener
+                        >KeyListener
+                        >void keyPressed()
+                        >void keyTyped()
+                        >void keyReleased()
+                        >void keyListener()
+
+Lecture 17:     MouseListener
+                    how to write MouseListener
+                        >MouseListener
+                        >void mouseClicked(MouseEvent e)
+                        >void mousePressed(MouseEvent e)
+                        >mouseReleased(MouseEvent e)
+                        >void mouseEntered(MouseEvent e)
+                        >void mouseExited(MouseEvent e)
+                        >addMouseListener()
+
+Lecture 18:     MouseMotionListener
+                 How to write MouseMotionListener
+                    >MouseMotionListener
+                    >void mouseMoved()
+                    >void mouseDragged()
+                    >addMouseMotionListener()
+Lecture 19:     FocusListener
+                    How to write FocusListener
+                        >FocusListener
+                        >void focusGained()
+                        >void focusLost()
+                        >addFocusListener()
+Lecture 20:     CaretListener
+                    >caretListener
+                    >void caretUpdated()
+                    >addCaretListener()
+
+Lecture 21:     WindowListener
+                  How to write WindowListener
+                    >public void windowOpened(WindowEvent e)
+                    >public void windowClosing(WindowEvent e)
+                    >public void windowClosed(WindowEvent e)
+                    >public void windowIconified(WindowEvent e)
+                    >public void windowDeiconified(WindowEvent e)
+                    >public void windowActivated(WindowEvent e)
+                    >public void windowDeactivated(WindowEvent e)
+                    >addWindowListener()
+Lecture 22 :     Layout Managers
+                 Layout: the arrangement of the components inside a container is called Layout.
+                    >NullLayout
+                    >BorderLayout
+                    >FlowLayout
+                    >GridLayout
+                    >GridBagLayout
+                    >CardLayout
+                    >GroupLayout
+                    >BoxLayout
+Lecture 23 : Practice of NullLayout
+Lecture 24 : Practice of BorderLayout
+Lecture 25 : Practice of FlowLayout
+             How to use FlowLayout
+              >Set alignment in flowLayout
+              >setVgap() and setHgap()
+              >indexing in FlowLayout
+             Properties:
+                1.Flow Layout is the default Layout for JPanel
+                2.Its sets the components its preferred size in java.
+                3.It also sets the width of the component acc. to its content
+                4.If width of Jframe is less than it shifts the extra components to the next row.
+                5.If width of JFrame is more than it aligns the components to the center.
+Lecture 26 :  Practice of gridlayout
+              properties:
+                >Just like Flow Layout, Grid Layout also sets the components left to right in a flow
+                >In grid Layout all the available space is consumed by the components.
+                >Grid Layout can be divided into the form of rows and columns.
+                > in grid layout the all components have the same size.
+
+Lecture 27 : Practice for Gridbaglayout
+Lecture 28 : JPanel
+                Components:
+                  1.Light weight components
+                    >that can be added to some other components,
+                        eg: JButton and JRadioButton etc
+                  2.Heavy weight components
+                    >that cannot be added to any other component.
+                        eg: JDialog and JFrame...
+Lecture 29 :    Card layout
+                    >A CardLayout object is a layout manager for a container.
+                    >It treats each component in the container as a card.
+                    >Only one card is visible at a time,and the container acts as a stack of cards.
+                    >the first component added to a CardLayout object is the visible component
+                     when the container is first displayed.
+                    >cardLayout has some useful methods to flip the cards.
+                important methods:
+                    >first()
+                    >last()
+                    >next()
+                    >previous()
+                    >show()
+Lecture 30 :    Box Layout:
+                    >A BoxLayout arranges the components in a single row or a single column.
+                    >Only one constructor is used by BoxLayout:
+                        BoxLayout(Container target , int axis)
+                    >Four different axes could be chosen:
+                        -Y_AXIS
+                        -X_AXIS
+                        -LINE_AXIS
+                        -PAGE_AXIS
+                    >BoxLayout is same as FlowLayout but with more features
+Lecture 31 :    Advance Components
+                    >JProgressBar
+                    >JSpinner
+                    >JCheckBoxMenuItem
+                    >JOptionPane
+                    >JScrollPane
+                    >JTabbedPane
+                    >JTable
+                    >JFileChooser
+                    >JColorChooser
+Lecture 32 :    JOptionPane
+                    >Show an Input
+                        Str = JOpyionPane.showInputDialog("Enter your name")
+
+                    >Show a Message Dialog
+                        JOptionPane.showMessageDialog( parent,message,title,messageType );
+                      types of Messages:
+                        JOptionPane.PLAIN_MESSAGE
+                        JOptionPane.INFORMATION_MESSAGE
+                        JOptionPane.QUESTION_MESSAGE
+                        JOptionPane.ERROR_MESSAGE
+                        JOptionPane.WARNING_MESSAGE
+
+                    >Show a Confirm Dialog
+                        JOptionPane.showConfirmDialog( Parent, message, title, optionType, messageType );
+
+Lecture 33 :    JScrollPane
+Lecture 34 :    JTabbedPane
+Lecture 35 :    JTable: is used to display the data into tabular form (rows and columns)
+                    JTable table =new JTable(data,columnName);
+
+                >There are many ways to create a table in Java(i.e. Constructor)
+                >two popular ways to create a table are:
+                    1. JTable(data , columnNames);
+                    2. JTable(tableModel);
+                Steps:
+                    rowData[][] = {{a1,a2},{b1,b2},...,{n1,n2}};
+                    columnNames[] = {col_q.col_2,...,col_n};
+
+                    DefaultTableMode tableMode = new DefaultTableModel(rowData , columnNames );
+                    JTable table = new JTable(tableModel);
+
+Lecture 36 :    JProgressBar: is used to display the progress of some specified task.
+                            : show the percentage of completion of specified task.
+                            >the progress bar fills up as the task reaches its completion.
+                            >In addition to show the percentage of completion of task, it can also display some text.
+               -JProgressBar(): creates an progress bar with no text on it
+               -JProgressBar(int orientation): creates an progress bar with a specified orientation.
+                                    >SwingConstants.VERTICAL
+                                    >SwingConstants.HORIZONTAL
+               -JProgressBar(int min , int max): creates an progress bar with specified minimum and maximum value
+               -JProgressBar(int orientation , int min , int max)
+
+               Commonly used methods of JProgressBar are:
+                >void setMaximum(int n): set the progress bar's maximum value to the value n.
+                >void setMinimum(int n): set the progress bar's minimum value to the value n.
+                >void setValue(int n): set progress bar's current value to the value n.
+                >void setString(String s): set the value of progress String to the String s.
+                >void setStringPainted(boolean b): decides whether string should be displayed or not in progressbar
+Lecture 37 :    JPopupMenu
+Lecture 38 :    JCheckBoxMenuItem
+Lecture 39 :    JSeparator
+                        is a component that is used to implement divider lines.
+                     it is used to draw a line to separate widgets in a Layout .
+                     it can be horizontal or vertical.
+Lecture 40 :
+Lecture 41 :
+Lecture 42 :
+Lecture 43 :
+Lecture 44 :
+Lecture 45 :
+Lecture 46 :
+Lecture 47 :
+Lecture 48 :
+Lecture 49 :
+
+
+
