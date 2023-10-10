@@ -34,7 +34,6 @@ public class Swing37 {
             pm.add(mi3);
 
             add(pm);
-            setVisible(true);
             addMouseListener(new MouseAdapter() {
                 @Override
                 public void mouseClicked(MouseEvent e) {
@@ -45,6 +44,7 @@ public class Swing37 {
                     }
                 }
             });
+            setVisible(true);
         }
         @Override
         public void actionPerformed(ActionEvent e) {
