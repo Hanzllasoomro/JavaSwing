@@ -1,3 +1,82 @@
+Lecture 1:      JFrame
+Lecture 2:      JLabel
+Lecture 3:      JTextField
+Lecture 4:      JPasswordField
+Lecture 5:      JButton
+Lecture 6_1:    JButton Event
+Lecture 6_2:    JButton Event
+Lecture 6_3:    Event Handling Using anonymous inner class
+Lecture 6_4:    Event handling using other Class
+Lecture 7:      JTextArea
+Lecture 8:      JRadioButton
+Lecture 9:      JCheckBox
+Lecture 10:     JComboBox
+Lecture 11:     JAR Files
+Lecture 12:     JMenuBar
+Lecture 13:     Event Listeners
+Lecture 14:     Listeners
+Lecture 15:     ItemListener: ItemListener is a Listener that listens ItemEvent.
+Lecture 16:     keyListener
+Lecture 17:     MouseListener
+Lecture 18:     MouseMotionListener
+Lecture 19:     FocusListener
+Lecture 20:     CaretListener
+Lecture 21:     WindowListener
+Lecture 22 :    Layout Managers
+Lecture 23 :    Practice of NullLayout
+Lecture 24 :    Practice of BorderLayout
+Lecture 25 :    Practice of FlowLayout
+Lecture 26 :    Practice of gridlayout
+Lecture 27 :    Practice for Gridbaglayout
+Lecture 28 :    JPanel
+Lecture 29 :    Card layout
+Lecture 30 :    Box Layout:
+Lecture 31 :    Advance Components
+Lecture 32 :    JOptionPane
+Lecture 33 :    JScrollPane
+Lecture 34 :    JTabbedPane
+Lecture 35 :    JTable: is used to display the data into tabular form (rows and columns)
+Lecture 36 :    JProgressBar: is used to display the progress of some specified task.
+Lecture 37 :    JPopupMenu
+Lecture 38 :    JCheckBoxMenuItem
+Lecture 39 :    JSeparator
+Lecture 40 :    JSplitPane
+Lecture 41 :    JSpinner
+Lecture 42 :    JToolTip
+Lecture 43 :    JSlider
+Lecture 44 :    JInternalFrame
+Lecture 45 :    JDesktopPane
+Lecture 46 :    JEditorPane
+Lecture 47 :    JToggleButton
+Lecture 48 :    JDialog
+Lecture 48++ :  Calling other frame from one
+Lecture 49 :    JWindow
+Lecture 50 :    JToolBar
+Lecture 51 :    JList
+Lecture 52 :    JTextPane
+Lecture 53 :    JRootPane
+Lecture 54 :    JLayeredPane
+Lecture 55 :    GlassPane
+Lecture 56 :    JColorChooser
+Lecture 57 :    JComponent
+Lecture 58 :    JTree
+Lecture 59 :    JViewPoint
+Lecture 60 :    JApplet
+Lecture 61 :    JFileChooser
+Lecture 62 :    Look and feel
+Lecture 63 :    Graphics Animation 1
+Lecture 64 :    Graphics Animation 2
+Lecture 65 :    Graphics Animation 3
+Lecture 66 :    Graphics Animation 4
+
+Practice 1 :    Login Form
+Practice 2 :    Simple Calculator
+Practice 3 :    Registration Form
+Practice 4 :    How to create NotePad Application
+Practice 5 :    Brick Breaker
+Practice 6 :    Complete Snake Game
+Practice 7 :    Chat Application
+
 Lecture 1: JFrame
                 setVisible()
                 setDefaultCloseOperation()
@@ -337,16 +416,148 @@ Lecture 39 :    JSeparator
                         is a component that is used to implement divider lines.
                      it is used to draw a line to separate widgets in a Layout .
                      it can be horizontal or vertical.
-Lecture 40 :
-Lecture 41 :
-Lecture 42 :
-Lecture 43 :
-Lecture 44 :
-Lecture 45 :
-Lecture 46 :
-Lecture 47 :
-Lecture 48 :
-Lecture 49 :
+Lecture 40 :    JSplitPane
+                        1. JSplitPane is a component that is used to divide a container into two parts.
+                        2. There is a divider line b/w both the parts that can be moved to resize the parts.
+                        3. Both the parts now works as a separate container.
+                        4. JSplitPane can be of two types, vertical and horizontal.
+Lecture 41 :    JSpinner
+                    1.JSpinner is a single line input field that allows the user to select a number or an object value from an
+                        ordered sequence.
+                    2.the user can manually typr in a legal data into the text field of the spinner.
+                    3.The spinner is something preferred because they don't need a drop down list.
+                    4.Spinner contains a upward and a downward arrow to show the previous and the next element when it is pressed.
 
+                    Constructors of JSpinner are:
+                        > JSpinner(): creates an empty spinner with initial value set to zero and no constraints.
+                        > JSpinner(SpinnerModel model):
+                            creates a spinner with a specified spinner model passed as argument.
+                    Commonly used methods are:
+                        >SpinnerListModel(List l)
+                        >SpinnerNumberModel(int value, int max, int min, int step)
+                        >setValue(Object o)
+                        >getValue()
+                        >getPreviousValue()
+                        >getNextValue()
 
+Lecture 42 :    JToolTip
+                    is a message that appears when a cursor is positioned over an icon, image, hyperlink or other element in a GUI.
 
+Lecture 43 :    JSlider
+                    is a implementation of slider that allows the user to select a value by sliding the knob within the bounded value.
+                Parts of Slider:
+                    >Track
+                    >Knob
+                    >Major Ticks
+                    >Minor Ticks
+                    >Labels
+                Important Methods are:
+                    >setMinimum(int n)
+                    >setMaximum(int n)
+                    >setOrientation(o)
+                    >setValue(int n)
+
+                    >setPaintTicks(boolean b)
+                    >setPaintTrack(boolean b)
+                    >setPaintLabels(boolean b)
+
+                    >setMajorTickSpacing(int n)
+                    >setMinorTickSpacing(int n)
+
+                    >addChangeListener( ChangeListener l)
+
+Lecture 44 :    JInternalFrame
+                       is a light weight component that has all the features of a JFrame.
+Lecture 45 :    JDesktopPane
+                       > can be used to create "multi-document" application.
+                >JDesktopPane is a component by which you can add multiple small windows instances to the main window.
+Lecture 46 :    JEditorPane
+                    is used to create a simple text editor window. It has to methods
+                        >setContentType()
+                        >setText()
+
+Lecture 47 :    JToggleButton
+Lecture 48 :    JDialog
+                    is a used to create dialog boxes in Java.
+                 >it is a heavy component like JFrame, so it can't be added to any container.
+                 >like JFrame, JDialog also contains the border layout as the default layout manager.
+                 >It is like JFrame but the main difference is that It is always used as a child Window.
+                 >JDialog doesn't contain maximize and minimize buttons like JFrame.
+                 >JDialog usually are created with JOptionPane static methods.
+
+Lecture 49 :    JWindow
+                 >   is also a Top Level Container like JFrame but the major difference is that JWindow does not have the titleBar and
+                    window management buttons like maximize button, minimize button and close button.
+                 > it can be displayed anywhere on user's desktop.
+
+Lecture 50 :    JToolBar
+                    is a group of commonly used components such as buttons with icons or dropdown menus.
+Lecture 51 :    JList
+                    is a component that display a set of Objects and allows the user to select one or more items.
+             >  JList is an easy way to display an array of Vectors
+             >  Constructor for JList are:
+                    JList(): creates an empty blank list
+                    JList(Object[] items): creates an new list with the elements of array.
+                    JList(Vector v): creates an new list with the elements of vector.
+                    JList(ListModel m): creates an new list with the specified List Model.
+
+Lecture 52 :    JTextPane
+Lecture 53 :    JRootPane
+                    is a light weight container used behind the scenes by JFrame, JDialog, JWindow, JApplet and JInternalFrame
+               parts of Root Pane:
+                >Content Pane
+                >Optional menubar
+                >Layered Pane
+                >Glass Pane
+
+Lecture 54 :    JLayeredPane
+                    is used to add depth to swing container.
+               > it is used to provide a third dimension for positioning the component.
+               > it allow components to overlap each other when needed.
+               > An integer object specify each component's depth in the container.
+               > The Higher numbered component display "on top" of other components.
+               >JLayeredPane divides the depth range into several different layers.
+               1. FRAME_CONTENT_LAYER(-30000)
+               2. DEFAULT_LAYER(0)
+               3. PALETTE_LAYER(100)
+               4. MODEL_LAYER(200)
+               5. POPUP_LAYER(300)
+               6. DRAG_LAYER(400)
+               > How to sdd components
+                LayeredPane.add(component, LayeredPane.DEFAULT_LAYER);
+                                            OR
+                LayeredPane.add(component, new Integer(10));
+
+Lecture 55 :    GlassPane
+                    is a container that seems like a glass showing at the top of content pane.
+                >it is transparent and hidden by default.
+                >the glass pane is useful when you want to be able to catch events or paint over an area that already contains one or more
+                                                             components
+                >For example, you can deactivate mouse events for a multi component region by having the glass pane intercept the events.
+                                or you can display an image over multiple components using the glass pane.
+
+Lecture 56 :    JColorChooser
+Lecture 57 :    JComponent
+Lecture 58 :    JTree
+                    is a swing component that is used to display a hierarchical data into a tree form.
+                > A tree is made of nodes.
+                > The node from which tree starts is called root node.
+                > The node having sub-nodes is called parent.
+                > The node having its parent is called child node.
+                > The node having no child is called leaf-node.
+                > The node at the same hierarchical level and having same parent is called siblings.
+Lecture 59 :    JViewPoint
+lecture 60 :    JApplet
+Lecture 61 :    JFileChooser
+                    is a very component that id used t show a system dialog to the user so that user can choose a file or a directory.
+Lecture 62 :    Look and feel
+                     "lOOK" refers to the appearance of GUI widgets and "FEEL" refers to the way the widget behave
+                        try{
+                        UIManager.setLookAndFeel(String lookAndFeelClassName);
+                        }catch (Exception e){}
+
+                     Different types of Themes of Java
+                     1. MetalLookAndFeel-- "javax.swing.plaf.metal.MetalLookAndFeel"
+                     2. NimbusLookAndFeel-- "javax.swing.plaf.nimbus.NimbusLookAndFeel"
+                     3. MotifLookAndFeel-- "javax.swing.plaf.motif.MotifLookAndFeel"
+                     4. WindowsClassicLookAndFeel-- "javax.swing.plaf.windows.WindowsClassicLookAndFeel""
